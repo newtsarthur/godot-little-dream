@@ -1,5 +1,5 @@
 
-# 🌌 Chóquito – Little Dream
+# 🌌 Little Dream - Team Chocoplay
 
 ![Capa do Jogo](screenshots/gameplay.png)
 
