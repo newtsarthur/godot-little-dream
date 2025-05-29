@@ -1,0 +1,113 @@
+[gd_scene load_steps=6 format=3 uid="uid://dhetbk51p4tj2"]
+
+[ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_vjb58"]
+[ext_resource type="Script" uid="uid://11iaensobwcs" path="res://scripts/control.gd" id="2_vjb58"]
+[ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="3_4ytvr"]
+[ext_resource type="Script" uid="uid://c4wccppbvj4ol" path="res://scripts/node.gd" id="3_mhnvy"]
+[ext_resource type="AudioStream" uid="uid://dikaynrjj3tih" path="res://sounds/background.ogg" id="4_4ytvr"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = ExtResource("1_vjb58")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_vjb58")
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.145098, 0.588235, 0.745098, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -102.5
+offset_top = -40.0
+offset_right = 102.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Control/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4ytvr")
+theme_override_font_sizes/font_size = 20
+text = "Feito por: Team Chocoplay"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.383
+anchor_top = 0.452
+anchor_right = 0.617
+anchor_bottom = 0.548
+offset_left = -0.240021
+offset_top = -155.44
+offset_right = 0.239929
+offset_bottom = -155.56
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control/HBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4ytvr")
+theme_override_font_sizes/font_size = 100
+text = "Little Dream"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.571
+anchor_right = 1.0
+anchor_bottom = 0.935
+offset_top = -97.12
+offset_bottom = -97.2001
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Play" type="Button" parent="Control/HBoxContainer3/VBoxContainer" groups=["button"]]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("3_4ytvr")
+theme_override_font_sizes/font_size = 40
+text = "Jogar"
+flat = true
+
+[node name="Controls" type="Button" parent="Control/HBoxContainer3/VBoxContainer" groups=["button"]]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("3_4ytvr")
+theme_override_font_sizes/font_size = 40
+text = "Controles"
+flat = true
+
+[node name="Quit" type="Button" parent="Control/HBoxContainer3/VBoxContainer" groups=["button"]]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("3_4ytvr")
+theme_override_font_sizes/font_size = 40
+text = "Sair"
+flat = true
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("3_mhnvy")
+audio_stream = ExtResource("4_4ytvr")
