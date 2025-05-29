@@ -72,10 +72,10 @@ O jogo cumpre os **requisitos obrigatórios de um projeto 3D**, com qualidade vi
 
 ## 👥 Equipe de Desenvolvimento
 
-* **Arthur Belo**
-* **Bruno Lourenço**
-* **Victor Gouveia**
-* **Jean Ricardo**
+* **Arthur Belo - 01615335**
+* **Bruno Lourenço - 01606518**
+* **Victor Gouveia - 01602538**
+* **Jean Ricardo - 01583760**
 
 ## 🔍 Equipe de pesquisa
 * **Paulo Vinícius Feliciano de Souza - 01618133**
