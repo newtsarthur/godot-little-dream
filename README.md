@@ -77,6 +77,11 @@ O jogo cumpre os **requisitos obrigatórios de um projeto 3D**, com qualidade vi
 * **Victor Gouveia**
 * **Jean Ricardo**
 
+## 🔍 Equipe de pesquisa
+* **Paulo Vinícius Feliciano de Souza - 01618133**
+* **Lucas Araújo Da Silva -01589449**
+* **Lucas Maia Sivini - 01616874**
+
 ---
 
 ## 📜 Licença
